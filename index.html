@@ -10,12 +10,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css" media="all">
 	<script src="https://static.altphotos.com/js/modernizr-custom.e37bd369327d.js"></script>
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="https://static.altphotos.com/apple-touch-icon.8aa36246937c.png"> -->
-	<!-- <link rel="icon" type="image/png" href="https://static.altphotos.com/favicon-32x32.794f54658611.png" sizes="32x32"> -->
-	<!-- <link rel="icon" type="image/png" href="https://static.altphotos.com/favicon-16x16.5f20a1803b80.png" sizes="16x16"> -->
-	<!-- <link rel="manifest" href="https://static.altphotos.com/manifest.d1b8dd00d2c8.json"> -->
-	<!-- <link rel="mask-icon" href="https://static.altphotos.com/safari-pinned-tab.ac6ea4c3251a.svg"> -->
 	<meta name="theme-color" content="#ffffff">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWPM4C5TJS"></script>
+	<script src="/js-pkg/main/BackToTopButton.js"></script>
 </head>
 
 <body id="body">
@@ -45,9 +42,8 @@
 			</p>
 			<div class="page-header__imgcntnr u-absolute">
 				<!-- Important!! data-ratio = image-width/image-height (for all ie+edge) --><img
-					class="page-header__img js-page-header__img"
-					src="https://sunnote.xyz/angold/image/homepage.webp"
-					data-ratio="1.5" alt="Boats on the Seine, Eiffel Tower in the Background, Paris, France">
+					class="page-header__img js-page-header__img" src="https://sunnote.xyz/angold/image/homepage.webp"
+					data-ratio="1.5" alt="gold in taiwan">
 			</div>
 		</header>
 		<div class="band o-wrapper--48@desktop">
@@ -82,9 +78,6 @@
 		<p class="u-micro">&copy; 2023 sun.</p>
 	</footer>
 
-	<!-- #site-info -->
-	<!-- <a id="back-to-top" href="#body"
-		class="back-to-top js-hidden u-caps u-micro a--none o-box o-box--tiny u-strong">top</a> -->
 	<script type="text/javascript" src="https://sunnote.xyz/js-pkg/Angold.js" charset="utf-8"></script>
 
 	<script src="https://sunnote.xyz/js-pkg/BackToTopButton.js"></script>
@@ -222,13 +215,19 @@
 
 <script type="text/javascript">
 	for (let i = 1; i < 10; i++) {
+		let div = document.createElement("div");
 		let img = document.createElement("img");
 		img.src = "https://sunnote.xyz/angold/image/main/" + i + ".webp";
 		img.alt = "黃金 gold";
-		img.title = "test";
+		img.title = "黃金 Angold 品項:" + i;
 		img.style.loading = "lazy";
 		document.querySelector(".image-wall").appendChild(img);
-		console.log("Hello World")
+
+		// let text = document.createElement("p");
+		// text.innerHTML = "Image " + i;
+		// div.appendChild(text);
+		// document.querySelector(".image-wall").appendChild(div);
+		// document.querySelector(".image-wall").appendChild(img);
 	}
 
 </script>
