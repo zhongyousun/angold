@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Angold</title>
-	<link rel="icon" href="pastel.ico" type="image/x-icon" />
+	<link rel="icon" href="/image/favicon.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600" rel="stylesheet">
@@ -46,7 +46,7 @@
 			<div class="page-header__imgcntnr u-absolute">
 				<!-- Important!! data-ratio = image-width/image-height (for all ie+edge) --><img
 					class="page-header__img js-page-header__img"
-					src="https://media.altphotos.com/cache/images/2017/03/21/10/1504/paris-eiffel-tower-boats.jpg"
+					src="https://sunnote.xyz/angold/image/main/homepage.webp"
 					data-ratio="1.5" alt="Boats on the Seine, Eiffel Tower in the Background, Paris, France">
 			</div>
 		</header>
@@ -85,8 +85,7 @@
 	<!-- #site-info -->
 	<!-- <a id="back-to-top" href="#body"
 		class="back-to-top js-hidden u-caps u-micro a--none o-box o-box--tiny u-strong">top</a> -->
-	<script type="text/javascript" src="https://sunnote.xyz/js-pkg/Angold.js"
-		charset="utf-8"></script>
+	<script type="text/javascript" src="https://sunnote.xyz/js-pkg/Angold.js" charset="utf-8"></script>
 
 	<script src="https://sunnote.xyz/js-pkg/BackToTopButton.js"></script>
 	<script>addBackToTop({
@@ -225,6 +224,9 @@
 	for (let i = 1; i < 10; i++) {
 		let img = document.createElement("img");
 		img.src = "https://sunnote.xyz/angold/image/main/" + i + ".webp";
+		img.alt = "黃金 gold";
+		img.title = "test";
+		img.style.loading = "lazy";
 		document.querySelector(".image-wall").appendChild(img);
 		console.log("Hello World")
 	}
